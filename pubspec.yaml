@@ -1,0 +1,54 @@
+name: flutter_unity_widget_example
+description: Simple Rock Paper Scissors game with unity
+
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.6
+  flutter_unity_widget: ^2022.2.1
+  pointer_interceptor: ^0.9.0+1
+  audioplayers: ^6.0.0
+  confetti: ^0.7.0
+  web3modal_flutter: ^3.3.0-beta04
+  loading_animation_widget: ^1.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^4.0.0
+  build_runner: ^2.3.3
+  flutter_gen_runner: ^5.5.0+1
+
+
+flutter:
+
+  generate: true
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/images/
+    - assets/audios/
+
+  fonts:
+    - family: Wonder
+      fonts:
+        - asset: assets/fonts/Wonder-Boys.ttf
+        - asset: assets/fonts/Wonder-Boys.ttf
+          weight: 700
+        - asset: assets/fonts/Wonder-Boys.ttf
+          style: italic
+        - asset: assets/fonts/Wonder-Boys.ttf
+          weight: 700
+          style: italic
+
+
+# command to build the resources : dart run build_runner build
